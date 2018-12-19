@@ -56,12 +56,34 @@ H2.desc
     top: 7px !important;
     right: 5px;
   }
+  .donate
+  {
+    position: relative;
+    top: 50px !important;
+  }
+  .paypl
+  {
+    position: relative; top: 59px !important;
+  }
+  H2.desc
+  {
+    margin-top: 19%;
+  }
+}
+.paypl
+{
+  position: relative; top: 110px;
 }
 .info
 {
   position: absolute;
   top: 5px;
   right: 5px;
+}
+.donate
+{
+  position: relative;
+  top: 100px;
 }
 .credit
 {
