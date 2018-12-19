@@ -148,7 +148,7 @@ max-width: 100%;
 :target:before {
 content:"";
 display:block;
-height:120px; /* fixed header height*/
+height:10px; /* fixed header height*/
 margin: 0px 0 0; /* negative fixed header height */
 }
 .bug
