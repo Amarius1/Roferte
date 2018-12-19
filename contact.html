@@ -1,0 +1,97 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Roferte</title><!--down of a brave new world-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="icon" href="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/512x512/shopping_cart.png">
+	<link href="https://amarius1.github.io/NeoMaterial/css/neo-material.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://amarius1.github.io/NeoMaterial/css/sidebarjs.min.css">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+<style>
+	::-webkit-scrollbar {
+			 display: flex;
+			width: 7px;
+			background:rgba(0,0,0,0)
+		}
+		/* Track */
+		::-webkit-scrollbar-track {
+			opacity: 0;
+		}
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			background: #bdbdbd;
+		}
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			background: #757575;
+		}
+		.unselectable {
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+</style>
+<body>
+
+  <nav class="white z-depth-0">
+    <div class="nav-title">
+      <H3 class="darker-text">Contact</H3>
+    </div>
+    <div class="nav-buttons">
+      <a href="index.html" class='btn blue dark-text' ripple>Acasa</a>
+      <a href="info.html" class='btn blue dark-text' ripple>Informatii</a>
+    </div>
+  </nav>
+  <br><br>
+  <div class="container contact darker-text">
+    <H2>Telefon:<a href="tel:744-444-444" class="blue-text">&nbsp;0744 444 444</a></h2>
+    <H2>Email: <a href="mailto:amariuscontact@gmail.com" class="blue-text">amariuscontact@gmail.com</a></h2>
+    <H2>Messenger: <a href="https://m.me/AlexanderAmarius" class="blue-text">AlexanderAmarius</a></H2>
+  </div>
+<br>
+  <H2 class="dark-text center">Trimite-ne un mesaj!&nbsp;&nbsp;<i class="em em-smiley"></i></H2>
+
+  <form action="mailto:amariuscontact@gmail.com" method="post" enctype="text/plain">
+  <div class="container form__group">
+     <input type="mail" name="mail" id="email" class="form__field" placeholder="Your Email" required>
+     <label for="mail" class="form__label">Nume</label>
+   </div>
+   <div class="container form__group">
+     <textarea type="text" name="Mesaj" id="message" class="form__field" placeholder="Your Message" rows="6"></textarea>
+     <label for="message" class="form__label">Mesaj</label>
+   </div>
+   <div style="margin-top: 17px;" class="container">
+   <input class="btn blue" type="submit" value="Trimite" ripple>
+   <input class="btn light" type="reset" value="Sterge">
+   </div>
+   </form>
+
+ <Br><Br>
+
+
+
+<!--scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://amarius1.github.io/NeoMaterial/js/neo-material.js"></script>
+<script src="https://amarius1.github.io/NeoMaterial/js/bigSlide.js"></script>
+<script src="logic.js"></script>
+
+<script>
+ // Init SidebarJS
+ var sidenav = new sidenav.SidebarElement();
+ </script>
+ <script>
+    $(document).ready(function() {
+        $('.side-btn-action').bigSlide();
+    });
+</script>
+</body>
+
+</html>
