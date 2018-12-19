@@ -1,0 +1,128 @@
+.gradient
+{
+background-image: linear-gradient(to bottom, #ffffff, #f6f6f9, #eeedf3, #e5e5ed, #dcdce7);
+}
+.title
+{
+ 	position: relative;
+  margin-top: 0%;
+  font-size: 70px;
+}
+.em-shopping_bags
+{
+  position: relative;
+  margin-top: 11%;
+  font-size: 50px;
+}
+.white
+{
+background-color: white;
+}
+a.huge:hover
+{
+  background-color: rgba(0,0,255,0.05) !important;
+}
+a.huge
+{
+  position: relative;
+  top: -25px;
+  padding: 10px 20px !important;
+	font-size: 28px !important;
+}
+H2.desc
+{
+  margin-top: 27%;
+}
+@media only screen and (max-width: 768px) {
+  H2.desc
+  {
+    margin-top: 120%;
+  }
+  .title
+  {
+   	position: relative;
+    margin-top: 0%;
+    font-size: 60px;
+  }
+  .em-shopping_bags
+  {
+    position: relative;
+    margin-top: 47%;
+    font-size: 60px;
+  }
+  .info
+  {
+    position: absolute;
+    top: 7px !important;
+    right: 5px;
+  }
+}
+.info
+{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.credit
+{
+  position: absolute;
+  bottom: -35px;
+  left: 5px;
+}
+:target:before {
+content:"";
+display:block;
+height:40px; /* fixed header height*/
+margin:-10px 0 0; /* negative fixed header height */
+}
+.bug
+{
+  	padding: 3px 15px;
+    font-size: 24px;
+}
+a.bug:hover
+{
+  background-color: #ebefff !important;
+}
+.line-in-middle {
+
+    height:200px;
+	  background: linear-gradient(to right,
+	                              transparent 0%,
+	                              transparent calc(49.8% - 0.81px),
+	                              #2196f3 calc(49% - 0.5px),
+	                              #2196f3 calc(50% + 0.5px),
+	                              transparent calc(50% + 0.81px),
+	                              transparent 100%);
+	}
+.prc{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 7px 17px;
+  font-size: 20px;
+}
+.nokia
+{
+  position: relative;
+  top: -6px;
+  left: 3px;
+}
+.op
+{
+  position: relative;
+  top: 5px;
+}
+img{
+  padding: 0px;
+  margin: 0px;
+}
+.menu{
+  position: fixed;
+  top: 2px;
+  left: 2px;
+  font-size: 30px;
+}
+.cbtn-flat
+{
+  padding-bottom: 14px !important;
+}
