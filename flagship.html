@@ -1,0 +1,119 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Roferte</title><!--down of a brave new world-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="icon" href="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/512x512/shopping_cart.png">
+	<link href="https://amarius1.github.io/NeoMaterial/css/neo-material.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://amarius1.github.io/NeoMaterial/css/sidebarjs.min.css">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <link rel="stylesheet" href="jquery.mCustomScrollbar.css">
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+<body class="gradient">
+
+  <nav class="transparent z-depth-0">
+    <div class="nav-title">
+      <H2 style="position: relative; left: 8px;" class="darker-text">Flagship</H2>
+    </div>
+    <div class="nav-buttons">
+      <a href="index.html" class='btn blue dark-text' ripple>Acasa</a>
+      <a href="info.html" class='btn blue dark-text' ripple>Informatii</a>
+    </div>
+  </nav>
+
+  <div id="content-1" class="scrollTo slide-wrapper center-element content demo-x">
+
+    <div class="smol slide2 z-depth-0">
+        <H3 class="darker-text">Categoria Flagship se refera la terminale care sunt specializate pe performanta si fotografie.</H3><br>
+        <i style="font-size: 50px;" class="center-element em em-camera"></i><Br><i style="top: 90px; font-size: 40px;" class="center-element em em-zap"></i>
+        <br>
+       <H5 class="palce dark-text">Gliseaza de la dreapta la stanga sau foloseste rotita pentru a te deplasa printre modele.</H5>
+    </div>
+    <div class="card slide sidec z-depth-1-5">
+  Flagship
+      <div class="card-actions">
+        <a class="btn-outline blue-text" ripple>Detalii</a>
+        <a class="btn-flat blue-text" ripple>Preturi</a>
+      </div>
+    </div>
+    <div class="card slide sidec z-depth-1-5">
+  Flagship
+      <div class="card-actions">
+        <a class="btn-outline blue-text" ripple>Detalii</a>
+        <a class="btn-flat blue-text" ripple>Preturi</a>
+      </div>
+    </div>
+    <div class="card slide sidec z-depth-1-5">
+  Flagship
+      <div class="card-actions">
+        <a class="btn-outline blue-text" ripple>Detalii</a>
+        <a class="btn-flat blue-text" ripple>Preturi</a>
+      </div>
+    </div>
+    <div class="card slide sidec z-depth-1-5">
+  Flagship
+      <div class="card-actions">
+        <a class="btn-outline blue-text" ripple>Detalii</a>
+        <a class="btn-flat blue-text" ripple>Preturi</a>
+      </div>
+    </div>
+    <div class="card slide sidec z-depth-1-5">
+  Flagship
+      <div class="card-actions">
+        <a class="btn-outline blue-text" ripple>Detalii</a>
+        <a class="btn-flat blue-text" ripple>Preturi</a>
+      </div>
+    </div>
+  </div>
+
+<!--scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://amarius1.github.io/NeoMaterial/js/neo-material.js"></script>
+<script src="https://amarius1.github.io/NeoMaterial/js/bigSlide.js"></script>
+<script src="jquery.mCustomScrollbar.js"></script>
+<script src="logic.js"></script>
+
+<script>
+		(function($){
+			$(window).on("load",function(){
+
+				$.mCustomScrollbar.defaults.theme="light-2"; //set "light-2" as the default theme
+
+				$(".demo-y").mCustomScrollbar();
+
+				$(".demo-x").mCustomScrollbar({
+					axis:"x",
+          theme:"rounded-dots-dark",
+					advanced:{autoExpandHorizontalScroll:true},
+          scrollInertia:320,
+           mouseWheelPixels: 220
+				});
+
+				$(".demo-yx").mCustomScrollbar({
+					axis:"yx"
+				});
+
+        $(".scrollTo").click(function(e){
+					e.preventDefault();
+					var $this=$(this),
+						rel=$this.attr("rel"),
+						el=rel==="content-y" ? ".demo-y" : rel==="content-x" ? ".demo-x" : ".demo-yx",
+						data=$this.data("scroll-to"),
+						href=$this.attr("href").split(/#(.+)/)[1],
+						to=data ? $(el).find(".mCSB_container").find(data) : el===".demo-yx" ? eval("("+href+")") : href,
+						output=$("#info > p code"),
+						outputTXTdata=el===".demo-yx" ? data : "'"+data+"'",
+						outputTXThref=el===".demo-yx" ? href : "'"+href+"'",
+						outputTXT=data ? "$('"+el+"').find('.mCSB_container').find("+outputTXTdata+")" : outputTXThref;
+					$(el).mCustomScrollbar("scrollTo",to);
+					output.text("$('"+el+"').mCustomScrollbar('scrollTo',"+outputTXT+");");
+				});
+			});
+		})(jQuery);
+	</script>
+</body>
+
+</html>
