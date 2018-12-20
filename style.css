@@ -105,7 +105,15 @@ H2.desc
     display: inline-flex;
 
   }
+  .sidec
+  {
+    height: 89% !important;
 
+  }
+  .mCSB_draggerContainer
+  {
+    display: none;
+  }
 
 
 }
@@ -206,4 +214,46 @@ img{
 .cbtn-flat
 {
   padding-bottom: 14px !important;
+}
+.slide-wrapper
+{
+  height: 90.5%;
+  width: 100%;
+
+}
+  .slide{
+    display: inline-block;
+    background-color: rgba(255,255,255,0.8);
+    z-index: 999;
+    top: -192px;
+  }
+  .slide2{
+    display: inline-block;
+    background-color: transparent;
+    z-index: 999;
+    margin-top: 20px;
+    position: relative;
+    left: 10px;
+  }
+
+.smol
+{
+  height: 100%;
+  width: 300px;
+  margin-left: 5px;
+  margin-right: 30px;
+
+}
+.palce
+{
+  position: absolute;
+  bottom: 50px;
+  font-size: 15px;
+}
+.sidec
+{
+  height: 87%;
+   min-width: 300px;
+   margin-left: 3px;
+   margin-right: 30px;
 }

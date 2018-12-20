@@ -5,3 +5,6 @@ $scope.resetDashboard = function() {
     $scope.dashboard.title = '';
     $scope.dashboard.description = '';
 }
+$(window).on('scroll', function() {
+  $("#realcontent").css("left", -$(window).scrollTop());
+});
