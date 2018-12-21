@@ -223,19 +223,28 @@ img{
 }
   .slide{
     display: inline-block;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,1);
     z-index: 999;
-    top: -192px;
+    top: 10px;
   }
   .slide2{
     display: inline-block;
     background-color: transparent;
     z-index: 999;
-    margin-top: 20px;
     position: relative;
     left: 10px;
+    top: -120px;
   }
-
+.info-pannel
+{
+  position: absolute;
+  bottom: 30px; left: 10px;
+}
+div.info-pannel>p
+{
+   line-height: 70%;
+   font-weight: 500;
+}
 .smol
 {
   height: 100%;
